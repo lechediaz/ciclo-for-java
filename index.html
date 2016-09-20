@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<title>Ciclo for en Java</title>
+	</head>
+	<body>
+		<article class="contenedor-principal">
+            <header>
+                <h2>Ciclo for en Java</h2>
+            </header>
+            <p>El ciclo for en Java se compone de cuatro secciones, a continuación hablamos de ellas 
+                de acuerdo a su orden de ejecución:
+            </p>
+            <ol>
+                <li>
+                    Inicialización: Aquí inicializamos una variable de tipo numérico 
+                    (<span class="codigo-sentencia">int</span> normalmente) que nos servirá para avanzar por el 
+                    ciclo, <em>normalmente se usa el 0, pues la mayoria de veces se recorren arreglos 
+                    o listas desde el primer item (desde el índice 0)</em>. 
+                    <strong>Este paso se realiza una sola vez en todo el ciclo</strong>.
+                </li>
+                <li>
+                    Condición: Esta parte del ciclo donde se determina si debe seguir o no con la ejecución 
+                    del ciclo. <em>Aquí podemos usar los operadores lógicos (&&, ||) y los 
+                    operadores de comparación numéricos (<,<=,>,>=) y los operadores de comparación 
+                    universales (==, !=, !)</em>. 
+                    <strong>Este paso se realiza antes de ejecutar el código dentro del ciclo</strong>.
+                </li>
+                <li>
+                    Código a ejecutar: Es precisamente el código que queremos ejecutar, <em>es ese 
+                    tipo de código que se debería ejecutar de forma repetitiva, y este ciclo ofrece 
+                    una solución a ese problema</em>. <strong>Este paso se ejecuta siempre y cuando la 
+                    condición se haya cumplido</strong>.
+                </li>
+                <li>
+                    Incremento/decremento: De acuerdo a la forma en que queramos 
+                    recorrer el ciclo, vamos incrementando o cecrementando nuestra 
+                    variable inicializada. <em>Normalmente se usa el ++ o el -- para afectar 
+                    incrementar o decrementar de a 1, pero es posible agregar nuestra lógica</em>. 
+                    <strong>Este paso se realiza luego de ejecutar nuestro código dentro del ciclo</strong>.
+                </li>
+            </ol>
+            <a href="https://www.ibm.com/developerworks/community/blogs/TamanKeet/entry/java_operadores_de_comparaci_c3_b3n80?lang=en" 
+            target="_blank">Fuente de consulta de operadores de comparación</a>
+<pre class="contenedor-ciclo-for"><span class="codigo-sentencia">for</span> (<span class="inicializacion">Inicialización</span>; <span class="condicion">Condición</span>; <span class="incremento-decremento">Incremento/decremento</span>)
+{
+    <span class="codigo-comentario">// Código a ejecutar</span>
+}
+</pre>
+            <p>A continuación podrás ejecutar un ciclo de prueba para que comprendas más su 
+                funcionamiento.
+            </p>
+<pre class="contenedor-ciclo-for ciclo-ejecutar"><span class="codigo-sentencia">for</span> (<span class="inicializacion"><span class="codigo-sentencia">int</span> contador = 0</span>; <span class="condicion">contador < 5</span>; <span class="incremento-decremento">contador++</span>)
+{
+    <span class="codigo-ejecutar">System.out.println(<span class="string">"El contador tiene: "</span> + contador);</span>
+}
+</pre>
+            <div id="ejecucion">
+                <p>Contenido variable contador: <span id="variable-contador"></span></p>
+                <h2>Salida</h2>
+                <div id="salida"></div>
+            </div>
+            <div class="btn btn-ejecutar">Comenzar</div>
+            <p class="certificada">Por Oscar David Díaz Fortaleché</p>
+		</article>
+		<script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+		<script src="js/mi_js.js" type="text/javascript"></script>
+	</body>
+</html>
